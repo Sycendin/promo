@@ -1,9 +1,23 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect, useRef } from "react";
 import "./BackgroundText.css";
-const backgroundText = () => {
+const BackgroundText = ({ divH }) => {
+  const controls = useRef();
+  const [fixedPosition, setFixedPostion] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY < divH - 500) {
+        setFixedPostion(window.scrollY);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [divH]);
   return (
     <Fragment>
-      <p
+      <div
         style={{
           position: "absolute",
           zIndex: 30,
@@ -14,6 +28,7 @@ const backgroundText = () => {
         }}
       >
         <span
+          ref={controls}
           className="text-shadow"
           style={{
             display: "flex",
@@ -22,10 +37,7 @@ const backgroundText = () => {
             fontSize: 40,
             fontWeight: "bold",
             color: "rgb(200, 229, 250)",
-            // textShadow: "0px 0px 8px rgb(0, 0, 255)",
-            // textShadow: "0px 0px 10px rgb(0, 0, 0)",
-
-            marginTop: "50%",
+            marginTop: fixedPosition + 400,
           }}
         >
           <span style={{}}>
@@ -34,8 +46,8 @@ const backgroundText = () => {
           </span>
           <span>Experience It Live</span>
         </span>
-      </p>
+      </div>
     </Fragment>
   );
 };
-export default backgroundText;
+export default BackgroundText;
