@@ -4,15 +4,14 @@
 
 
 #sticky {
-
+  width: 70%;
   position: sticky;
   position: -webkit-sticky;
 
-  top: 50%;
+  top: 10%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 
   color: black
 }
@@ -24,7 +23,7 @@
 }
 */
 .wrapper {
-
+  
   margin-left: auto;
   margin-right: auto;
   
