@@ -1,0 +1,40 @@
+.text-shadow{
+  text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; 
+}
+
+
+#sticky {
+
+  position: sticky;
+  position: -webkit-sticky;
+
+  top: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: black
+}
+/* .extra,
+#wrapper {
+  width: 70%;
+  margin: auto;
+  background-color: #ccc;
+}
+*/
+.wrapper {
+
+  margin-left: auto;
+  margin-right: auto;
+  
+
+}
+.extra{
+  height: 800px;
+}
+/* @media (min-height: 768px) {
+  #wrapper{
+    height: 2000px;
+  }
+} */
