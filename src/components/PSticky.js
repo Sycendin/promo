@@ -1,44 +1,46 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import Sticky from "./Sticky";
-import "./Sticky.css";
+// import Sticky from "./Sticky";
+import "./PSticky.css";
 const PSticky = () => {
-  const [isSticky, setSticky] = useState(false);
-  const ref = useRef(null);
-  const handleScroll = () => {
-    if (ref.current) {
-      console.log(ref.current.getBoundingClientRect().top);
-      setSticky(ref.current.getBoundingClientRect().top <= 0);
-    }
-    if (ref.current.getBoundingClientRect().top < -1034) {
-      setSticky(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", () => handleScroll);
-    };
-  }, []);
-
   return (
     <Fragment>
-      <p>Lorem ipsum...</p>
-      <div className={`sticky-wrapper${isSticky ? " sticky" : ""}`} ref={ref}>
-        <Sticky />
+      {/* <div class="extra"></div> */}
+
+      <div style={{}} className="wrapper">
+        <span
+          id="sticky"
+          className="text-shadow"
+          style={{
+            display: "flex",
+            alignContent: "center",
+            flexDirection: "column",
+            fontSize: 40,
+            fontWeight: "bold",
+            color: "rgb(200, 229, 250)",
+          }}
+        >
+          <span style={{}}>
+            <span style={{}}>Opening Day:</span>
+            <span style={{ color: "rgb(70, 167, 242)" }}> April 8th</span>
+          </span>
+          <span>Experience It Live</span>
+        </span>
+        <img
+          width={1775}
+          height={2220}
+          alt={"background"}
+          style={{
+            maxWidth: "70%",
+            height: "auto",
+            marginTop: -109,
+          }}
+          src={
+            "https://cdn.discordapp.com/attachments/958975018816131132/959290872514621450/vlad.webp"
+          }
+        ></img>
       </div>
-      <p>Lorem ipsum...</p>{" "}
-      <img
-        width={1775}
-        height={2220}
-        alt={"background"}
-        style={{ maxWidth: "70%", height: "auto", zindex: 0 }}
-        src={
-          "https://cdn.discordapp.com/attachments/958975018816131132/959290872514621450/vlad.webp"
-        }
-      ></img>
-      <div style={{ height: 1000 }}></div>
+      <br />
+      <div class="extra"></div>
     </Fragment>
   );
 };
