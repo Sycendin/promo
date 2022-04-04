@@ -1,24 +1,25 @@
 import React, { Fragment } from "react";
 
-const BackgroundImage = () => {
+const BackgroundImage = ({ margin }) => {
   return (
     <Fragment>
-      <div
+      <img
+        width={1775}
+        height={2220}
+        alt={"background"}
         style={{
-          display: "flex",
-          justifyContent: "center",
+          position: "relative",
+          maxWidth: "70%",
+          height: "auto",
+          marginTop: -margin,
+          top: 0,
+          borderBottomLeftRadius: 5,
+          borderBottomRightRadius: 5,
         }}
-      >
-        <img
-          width={1775}
-          height={2220}
-          alt={"background"}
-          style={{ maxWidth: "70%", height: "auto", zindex: 0 }}
-          src={
-            "https://cdn.discordapp.com/attachments/958975018816131132/959290872514621450/vlad.webp"
-          }
-        ></img>
-      </div>
+        src={
+          "https://cdn.discordapp.com/attachments/958975018816131132/959290872514621450/vlad.webp"
+        }
+      ></img>
     </Fragment>
   );
 };

@@ -1,20 +1,3 @@
-/* .text-shadow{
-text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; 
-animation: fadeInAnimation ease 3s;
-animation-iteration-count: 1;
-animation-fill-mode: forwards;
-}
-
-
-@keyframes fadeInAnimation {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
-} */
-
 .text-shadow{
   text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; 
 }
@@ -54,3 +37,12 @@ animation-fill-mode: forwards;
     height: 2000px;
   }
 } */
+
+
+
+iframe{
+  width:70%;
+
+
+
+}
