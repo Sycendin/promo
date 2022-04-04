@@ -1,24 +1,46 @@
 // import React, { Fragment, useState, useEffect, useRef } from "react";
+// import BackgroundImage from "./BackgroundImage/BackgroundImage";
+// import BackgroundText from "./BackgroundText/BackgroundText";
+// import Video from "./Video/Video";
+
+// const Home = () => {
+//   const parent = useRef(null);
+//   const [divH, setdivH] = useState();
+
+//   useEffect(() => {
+//     setdivH(parent.current.getBoundingClientRect().height);
+//   }, [divH]);
+//   return (
+//     <Fragment>
+//       <div
+//         ref={parent}
+//         style={{
+//           display: "flex",
+//           justifyContent: "center",
+//           width: "100%",
+//           height: "100%",
+//         }}
+//       >
+//         {divH ? <BackgroundText divH={divH} /> : null}
+//         <BackgroundImage />
+//       </div>
+//       <Video></Video>
+//       <div style={{ height: 800 }}></div>
+//     </Fragment>
+//   );
+// };
+// export default Home;
+
+// import React, { Fragment, useState, useEffect, useRef } from "react";
 // import "./BackgroundText.css";
-// import { StickyContainer, Sticky } from "react-sticky";
+
 // const BackgroundText = ({ divH }) => {
 //   const controls = useRef();
 //   const [fixedPosition, setFixedPostion] = useState(0);
 //   useEffect(
 //     () => {
-//       // let s = window.getComputedStyle("test");
 //       const handleScroll = () => {
-//         // console.log(window.scrollY);
-//         // console.log(
-//         //   controls.current.getBoundingClientRect().bottom,
-//         //   window.scrollY
-//         // );
-//         console.log(controls.current.getBoundingClientRect().top);
-//         if (Math.round(window.scrollY) < controls.current.offsetTop) {
-//           setFixedPostion(Math.round(window.scrollY));
-//         } else if (controls.current.getBoundingClientRect().top < divH - 100) {
-//           let x = fixedPosition;
-//           // console.log(controls.current.offsetTop);
+//         if (Math.round(window.scrollY) < divH / 1.8) {
 //           setFixedPostion(Math.round(window.scrollY));
 //         }
 //       };
@@ -33,15 +55,18 @@
 //   return (
 //     <Fragment>
 //       <div
+//         ref={controls}
 //         id="test"
 //         style={{
 //           position: "absolute",
-//           zIndex: 30,
+//           // position: "sticky",
+//           // position: "-webkit-sticky",
+//           zIndex: 100,
 //           display: "flex",
 //           justifyContent: "center",
 //           width: "100%",
-//           marginTop: "25%",
-
+//           // marginTop: "25%",
+//           marginTop: fixedPosition,
 //           // top: fixedPosition,
 //           // marginTop: "40%",
 //         }}
@@ -57,8 +82,8 @@
 //             fontWeight: "bold",
 //             color: "rgb(200, 229, 250)",
 //             height: 0,
+//             marginTop: "25%",
 
-//             top: fixedPosition,
 //             // top: fixedPosition,
 //           }}
 //         >
@@ -70,9 +95,6 @@
 //           <span>Experience It Live</span>
 //         </span>
 //       </div>
-//       <StickyContainer>
-//         <Sticky>{({ style }) => <h1 style={style}>Sticky element</h1>}</Sticky>
-//       </StickyContainer>
 //     </Fragment>
 //   );
 // };
