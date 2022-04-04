@@ -1,14 +1,18 @@
 import React, { Fragment } from "react";
-
+import "./Video.css";
 const Video = () => {
   return (
     <Fragment>
-      <video width="50%" height="50%" controls>
-        <source
-          src="https://www.youtube.com/watch?v=2CBzpg32RL8"
-          type="video/mp4"
-        ></source>
-      </video>
+      <div className="video-responsive" style={{}}>
+        <iframe
+          style={{}}
+          src={`https://www.youtube.com/embed/2CBzpg32RL8`}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="Embedded youtube"
+        />
+      </div>
     </Fragment>
   );
 };
