@@ -5,7 +5,12 @@ const Buttons = () => {
     <Fragment>
       <div className="button-div">
         <div className="both">
-          <button className="select">
+          <button
+            className="select"
+            onClick={() =>
+              window.open("https://www.mlb.com/bluejays", "_blank")
+            }
+          >
             Visit Website
             <img
               alt="logo"

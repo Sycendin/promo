@@ -9,7 +9,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(34, 106, 214);
+  background: rgb(34,106,214);
+  background: linear-gradient(180deg, rgba(34,106,214,1) 90%, rgba(34,140,214,1) 95%, rgba(34,192,214,1) 100%);
   font-family: 'Noto Sans', sans-serif;
 }
 

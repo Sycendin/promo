@@ -2,9 +2,10 @@ import React, { Fragment, useState, useEffect, useRef } from "react";
 import BackgroundImage from "./BackgroundImage/BackgroundImage";
 import BackgroundText from "./BackgroundText/BackgroundText";
 import BackgroundLogo from "./BackgroundLogo/BackgroundLogo";
-import Buttons from "./Buttons/Buttons";
+import Nav from "./Navigation/Navigation";
 import Video from "./Video/Video";
 import TwitterTimeline from "./TwitterTimeline/TwitterTimeline";
+import Buttons from "./Buttons/Buttons";
 import "./Home.css";
 const Home = () => {
   window.scrollTo(0, 0);
@@ -34,11 +35,13 @@ const Home = () => {
         </div>
       </div>
       <br />
-      <Buttons />
+      <Nav />
       <br />
       <Video />
       <br />
       <TwitterTimeline />
+      <br />
+      <Buttons />
       <div style={{ zIndex: 4 }} className="extra"></div>
     </Fragment>
   );

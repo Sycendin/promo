@@ -1,0 +1,25 @@
+.span-p{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+border-radius: 25px;
+border: 2px solid #ffffff;
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.text{
+color: white;
+transition: ease-in-out all .5s;
+
+}
+
+.text:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  color: rgb(0, 0, 255);
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255); 
+
+  
+}
