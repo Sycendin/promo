@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect, useRef } from "react";
 import BackgroundImage from "./BackgroundImage/BackgroundImage";
 import BackgroundText from "./BackgroundText/BackgroundText";
 import BackgroundLogo from "./BackgroundLogo/BackgroundLogo";
+import Buttons from "./Buttons/Buttons";
 import Video from "./Video/Video";
 import TwitterTimeline from "./TwitterTimeline/TwitterTimeline";
 import "./Home.css";
@@ -32,6 +33,8 @@ const Home = () => {
           {height ? <BackgroundImage margin={height} /> : null}
         </div>
       </div>
+      <br />
+      <Buttons />
       <br />
       <Video />
       <br />
