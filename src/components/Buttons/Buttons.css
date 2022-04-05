@@ -1,0 +1,27 @@
+.button-div{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.select {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  vertical-align: middle;
+  border:none;
+  color: white;
+  border:solid 2px rgb(255, 255, 255);
+  border-radius: 5px;
+  background: rgba(255, 255, 255,0);
+  font-size: 20px;
+  transition: ease-in-out all .5s
+
+}
+
+.select:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  
+}
