@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import LogoText from "./LogoText/LogoText";
 import SMSLinks from "./SMSLinks/SMSLinks";
 import Copyright from "./Copyright/Copyright";
-
+import "./Footer.css";
 const Footer = () => {
   return (
     <Fragment>
