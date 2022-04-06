@@ -5,7 +5,7 @@ import BackgroundLogo from "./BackgroundLogo/BackgroundLogo";
 import Nav from "./Navigation/Navigation";
 import Video from "./Video/Video";
 import TwitterTimeline from "./TwitterTimeline/TwitterTimeline";
-import Buttons from "./Buttons/Buttons";
+import Buttons from "./WebsiteButton/Buttons";
 import Footer from "./Footer/Footer";
 import "./Home.css";
 const Home = () => {

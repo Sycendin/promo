@@ -3,13 +3,18 @@ import LogoText from "./LogoText/LogoText";
 import SMSLinks from "./SMSLinks/SMSLinks";
 import Copyright from "./Copyright/Copyright";
 import "./Footer.css";
+import { Slide } from "react-awesome-reveal";
 const Footer = () => {
   return (
     <Fragment>
-      <div className="footer-div">
-        <LogoText />
-        <SMSLinks />
-        <Copyright />
+      <div style={{ overflow: "hidden" }}>
+        <Slide direction="up" duration={1000} triggerOnce="true">
+          <div className="footer-div" style={{ overflow: "hidden" }}>
+            <LogoText />
+            <SMSLinks />
+            <Copyright />
+          </div>
+        </Slide>
       </div>
     </Fragment>
   );
