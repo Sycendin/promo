@@ -45,7 +45,6 @@ const Home = () => {
       <Buttons />
       <br />
       <Footer />
-      <div style={{ zIndex: 4 }} className="extra"></div>
     </Fragment>
   );
 };

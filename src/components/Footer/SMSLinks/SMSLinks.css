@@ -1,0 +1,16 @@
+.sms-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sms-img{
+  width: 10%;
+  height: auto;
+}
+.sms-img:hover{
+  cursor: pointer;
+  filter: brightness(50%);
+}
