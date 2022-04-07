@@ -18,33 +18,35 @@ const Home = () => {
   }, []);
   return (
     <Fragment>
-      <div style={{}} className="wrapper">
-        <div ref={ref} style={{ zIndex: 2 }} id="sticky">
-          <BackgroundLogo />
-          <BackgroundText />
+      <div className="home-body">
+        <div style={{}} className="wrapper">
+          <div ref={ref} style={{ zIndex: 2 }} id="sticky">
+            <BackgroundLogo />
+            <BackgroundText />
+          </div>
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              position: "relative",
+              zIndex: 1,
+            }}
+          >
+            {height ? <BackgroundImage margin={height} /> : null}
+          </div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            position: "relative",
-            zIndex: 1,
-          }}
-        >
-          {height ? <BackgroundImage margin={height} /> : null}
-        </div>
+        <br />
+        <Nav />
+        <br />
+        <Video />
+        <br />
+        <TwitterTimeline />
+        <br />
+        <Buttons />
+        <br />
+        <Footer />
       </div>
-      <br />
-      <Nav />
-      <br />
-      <Video />
-      <br />
-      <TwitterTimeline />
-      <br />
-      <Buttons />
-      <br />
-      <Footer />
     </Fragment>
   );
 };
