@@ -1,6 +1,16 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 import "./Intro.css";
-const Intro = () => {
+const Intro = ({ change }) => {
+  useEffect(() => {
+    const visted = () => {
+      localStorage.setItem("visted", JSON.stringify("yes"));
+      change();
+    };
+    const set = () => {
+      setTimeout(visted, 6000);
+    };
+    set();
+  }, [change]);
   return (
     <Fragment>
       <div className="intro-img-div">
