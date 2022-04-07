@@ -1,0 +1,74 @@
+.intro-div{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 70vw;
+
+}
+
+.intro-text{
+  font-size: 8vw;
+  color: rgb(200, 229, 250);
+  text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; 
+
+} 
+
+.first{
+  opacity: 0;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+ 
+}
+
+.second{
+  opacity: 0;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1500ms;
+}
+
+.third{
+  opacity: 0;
+  animation: fadeInAnimation2 ease 2s;
+  /* animation: colorAnimation ease 2s; */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 3000ms;
+}
+
+.third-color{
+
+ 
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+     
+  }
+}
+
+@keyframes fadeInAnimation2 {
+  0% {
+      opacity: 0;
+  }
+  50%{
+    color: rgb(200, 229, 250);
+    text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; 
+  }
+  100% {
+      opacity: 1;
+      color:rgb(0, 72, 226);
+      text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255); 
+  }
+}
