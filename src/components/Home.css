@@ -1,8 +1,8 @@
 .home-body{
   background: linear-gradient(180deg, rgba(34,106,214,1) 90%, rgba(34,140,214,1) 95%, rgba(34,192,214,1) 100%);
-  animation: fadeInAnimation ease 2s;
+  /* animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
 }
 .text-shadow{
   text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; 

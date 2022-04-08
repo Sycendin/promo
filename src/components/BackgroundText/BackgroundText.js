@@ -5,12 +5,12 @@ const BackgroundText = () => {
   return (
     <Fragment>
       <span
-        className="text-shadow"
+        className="text-shadow span-animate"
         style={{
           display: "flex",
           alignContent: "center",
           flexDirection: "column",
-          fontSize: 40,
+          fontSize: "5vw",
           fontWeight: "bold",
           color: "rgb(200, 229, 250)",
           marginTop: "25%",

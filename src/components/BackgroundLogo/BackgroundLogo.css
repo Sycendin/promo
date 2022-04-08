@@ -1,0 +1,16 @@
+.logo-animation{
+  opacity: 0;
+  animation: logoAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes logoAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}

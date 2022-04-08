@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect } from "react";
-
+import "./BackgroundImage.css";
 const BackgroundImage = ({ margin, resize }) => {
   useEffect(() => {
     const reset = () => {
@@ -14,6 +14,7 @@ const BackgroundImage = ({ margin, resize }) => {
   return (
     <Fragment>
       <img
+        className="image-animation"
         width={1775}
         height={2220}
         alt={"background"}

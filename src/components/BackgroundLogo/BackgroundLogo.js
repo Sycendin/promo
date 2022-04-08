@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
+import "./BackgroundLogo.css";
 const BackgroundLogo = () => {
   return (
     <Fragment>
       {" "}
       <img
+        className="logo-animation"
         alt="logo"
         height={440}
         width={480}
