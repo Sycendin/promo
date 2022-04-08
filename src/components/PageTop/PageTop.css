@@ -1,0 +1,31 @@
+.page-top-div{
+position: absolute;
+display: flex;
+flex-direction: column;
+justify-content: center;
+right: 5%;
+width: 10%;
+height: 10%;
+
+}
+
+.up-logo{
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+}
+
+.up-text{
+
+  font-size: 2vw;
+  color:white;
+  z-index: 2;
+height: 100%;
+width: 100%; 
+ 
+}
+.up-logo:hover{
+  cursor: pointer;
+}

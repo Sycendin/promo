@@ -6,10 +6,11 @@ import Nav from "./Navigation/Navigation";
 import Video from "./Video/Video";
 import TwitterTimeline from "./TwitterTimeline/TwitterTimeline";
 import Buttons from "./WebsiteButton/Buttons";
+import PageTop from "./PageTop/PageTop";
 import Footer from "./Footer/Footer";
 import "./Home.css";
 const Home = () => {
-  window.scrollTo(0, 0);
+  window.scrollTo({ top: 0, behavior: "smooth" });
   const [height, setHeight] = useState(0);
 
   const ref = useRef(null);
@@ -49,6 +50,7 @@ const Home = () => {
         <TwitterTimeline />
         <br />
         <Buttons />
+        <PageTop />
         <br />
         <Footer />
       </div>
