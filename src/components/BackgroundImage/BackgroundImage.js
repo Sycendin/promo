@@ -1,6 +1,16 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect } from "react";
 
-const BackgroundImage = ({ margin }) => {
+const BackgroundImage = ({ margin, resize }) => {
+  useEffect(() => {
+    const reset = () => {
+      console.log("reset");
+      resize();
+    };
+    window.addEventListener("resize", reset);
+    return (_) => {
+      window.removeEventListener("resize", reset);
+    };
+  });
   return (
     <Fragment>
       <img

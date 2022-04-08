@@ -11,8 +11,11 @@ import "./Home.css";
 const Home = () => {
   window.scrollTo(0, 0);
   const [height, setHeight] = useState(0);
-  // const [h, setHeight] = useState(0);
+
   const ref = useRef(null);
+  const resize = () => {
+    setHeight(ref.current.offsetHeight);
+  };
   useEffect(() => {
     setHeight(ref.current.offsetHeight);
   }, []);
@@ -33,7 +36,9 @@ const Home = () => {
               zIndex: 1,
             }}
           >
-            {height ? <BackgroundImage margin={height} /> : null}
+            {height ? (
+              <BackgroundImage margin={height} resize={resize} />
+            ) : null}
           </div>
         </div>
         <br />
