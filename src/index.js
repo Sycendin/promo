@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createRoot } from "react-dom/client";
-
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
