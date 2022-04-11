@@ -20,7 +20,7 @@ const Intro = ({ change }) => {
           height={471}
           alt="vlad"
           src={
-            "https://cdn.discordapp.com/attachments/958975018816131132/961477029780422686/vlad.webp"
+            "https://cdn.discordapp.com/attachments/958975018816131132/962914123253952523/vlad.webp"
           }
         ></img>
         <img
@@ -29,7 +29,7 @@ const Intro = ({ change }) => {
           height={485}
           alt="springer"
           src={
-            "https://cdn.discordapp.com/attachments/958975018816131132/961477030006894592/george.webp"
+            "https://cdn.discordapp.com/attachments/958975018816131132/962914123069411378/george.webp"
           }
         ></img>
         <img
@@ -38,7 +38,7 @@ const Intro = ({ change }) => {
           height={624}
           alt="bo"
           src={
-            "https://cdn.discordapp.com/attachments/958975018816131132/961477030208237599/bo.webp"
+            "https://cdn.discordapp.com/attachments/958975018816131132/962914122796793856/bo.webp"
           }
         ></img>
       </div>
