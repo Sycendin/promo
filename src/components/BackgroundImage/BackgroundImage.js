@@ -3,7 +3,6 @@ import "./BackgroundImage.css";
 const BackgroundImage = ({ margin, resize }) => {
   useEffect(() => {
     const reset = () => {
-      console.log("reset");
       resize();
     };
     window.addEventListener("resize", reset);
