@@ -53,6 +53,7 @@ const Nav = () => {
           Stats
         </p>
       </span>
+      <br />
     </Fragment>
   );
 };
