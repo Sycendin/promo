@@ -16,11 +16,12 @@ const Home = () => {
   const [height, setHeight] = useState(null);
   const [width, setWidth] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-
+  const [initialModal, setInitialModal] = useState(true);
   const ref = useRef(null);
   const resize = () => {
     setWidth(window.innerWidth);
     setHeight(ref.current.offsetHeight);
+    setInitialModal(true);
   };
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -28,7 +29,7 @@ const Home = () => {
   }, []);
   return (
     <Fragment>
-      <div className="home-body">
+      <div className="home-body" style={{ zIndex: 9, position: "relative" }}>
         <div style={{}} className="wrapper">
           <div ref={ref} style={{ zIndex: 2 }} id="sticky">
             <BackgroundLogo />
@@ -58,15 +59,19 @@ const Home = () => {
         <br />
         <Buttons />
         <PageTop />
-        <br />
-        {/* Render modulebutton if vw is 600 or less */}
-        {width <= 600 ? (
-          <ModuleButton toggle={setIsOpen} current={isOpen} />
-        ) : null}
+
         <br />
         <Footer />
       </div>
-      <Modal open={isOpen} onClose={setIsOpen}></Modal>
+      {/* Render modulebutton if vw is 600 or less */}
+      {width <= 600 ? (
+        <ModuleButton
+          toggle={setIsOpen}
+          setInitialModal={setInitialModal}
+          current={isOpen}
+        />
+      ) : null}
+      <Modal open={isOpen} initialModal={initialModal}></Modal>
     </Fragment>
   );
 };

@@ -1,10 +1,10 @@
 import React, { Fragment, useState } from "react";
 import "./ModuleButton.css";
 
-const ModuleButton = ({ toggle, current }) => {
-  console.log(current);
+const ModuleButton = ({ toggle, current, setInitialModal }) => {
   const [isActive, setActive] = useState("false");
   const handleToggle = () => {
+    setInitialModal(false);
     setActive(!isActive);
     if (current === false) {
       toggle(true);
@@ -14,7 +14,7 @@ const ModuleButton = ({ toggle, current }) => {
   };
   return (
     <Fragment>
-      <div className="top-right">
+      <div className={isActive ? "top-right" : "top-right-change"}>
         <div className={isActive ? "" : "change"} onClick={handleToggle}>
           <div className="bar1"></div>
           <div className="bar2"></div>
