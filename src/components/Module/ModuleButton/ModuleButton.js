@@ -1,11 +1,16 @@
 import React, { Fragment, useState } from "react";
 import "./ModuleButton.css";
 
-const ModuleButton = () => {
+const ModuleButton = ({ toggle, current }) => {
+  console.log(current);
   const [isActive, setActive] = useState("false");
   const handleToggle = () => {
-    console.log("dss");
     setActive(!isActive);
+    if (current === false) {
+      toggle(true);
+    } else {
+      toggle(false);
+    }
   };
   return (
     <Fragment>

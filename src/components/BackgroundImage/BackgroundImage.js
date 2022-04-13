@@ -21,7 +21,7 @@ const BackgroundImage = ({ margin, resize }) => {
           position: "relative",
           maxWidth: "70%",
           height: "auto",
-          marginTop: -margin - 1,
+          marginTop: -(Math.ceil(margin) + 1),
           top: 0,
           borderBottomLeftRadius: 5,
           borderBottomRightRadius: 5,
