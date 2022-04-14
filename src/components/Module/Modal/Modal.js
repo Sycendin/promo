@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 import "./Modal.css";
-
+import ModalContent from "./ModalContent/ModalContent";
 const Modal = ({ open, initialModal }) => {
   // if (!open) return null;
 
@@ -15,7 +15,9 @@ const Modal = ({ open, initialModal }) => {
             ? "modal_styles"
             : "modal_styles-change"
         }
-      ></div>
+      >
+        <ModalContent />
+      </div>
     </Fragment>,
     document.getElementById("portal")
   );

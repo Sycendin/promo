@@ -5,9 +5,9 @@
   width: 100%;
   top: 0;
   left: 0;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   z-index: 10;
   animation: fadeInAnimation ease 0.25s;
   animation-iteration-count: 1;

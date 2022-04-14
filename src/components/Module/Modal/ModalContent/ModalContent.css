@@ -1,0 +1,26 @@
+.modal-image2 {
+
+
+z-index: 11;
+
+}
+.modal-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+ z-index: 11;
+}
+
+.modal-text{
+  
+  color: white;
+  font-size: 3vw;
+  border-bottom: 1px solid white;
+  z-index: 11;
+}
+
+.modal-text:hover{
+  cursor: pointer;
+
+}
