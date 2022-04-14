@@ -7,19 +7,21 @@ const ModalContent = () => {
       {/* <div className="modal-image2"> */}
 
       {/* </div> */}
-      <img
-        className="modal-image2"
-        alt="logo"
-        height={440}
-        width={480}
-        src={
-          "https://cdn.discordapp.com/attachments/958975018816131132/960059023883898920/BlueJaysLogo.webp"
-        }
-        style={{ width: "20%", height: "auto", marginRight: "70%" }}
-      ></img>
+      <div className="modal-image-div">
+        <img
+          className="modal-image2"
+          alt="logo"
+          height={440}
+          width={480}
+          src={
+            "https://cdn.discordapp.com/attachments/958975018816131132/960059023883898920/BlueJaysLogo.webp"
+          }
+          // style={{ width: "20%", height: "auto", marginRight: "70%" }}
+        ></img>
+      </div>
       <div className="modal-div">
         <p
-          className="modal-text"
+          className="modal-news"
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/news", "_blank")
           }
@@ -30,7 +32,7 @@ const ModalContent = () => {
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/tickets", "_blank")
           }
-          className="modal-text"
+          className="modal-tickets"
         >
           Tickets
         </p>
@@ -38,7 +40,7 @@ const ModalContent = () => {
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/schedule", "_blank")
           }
-          className="modal-text"
+          className="modal-schedule"
         >
           Schedule
         </p>
@@ -46,7 +48,7 @@ const ModalContent = () => {
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/schedule", "_blank")
           }
-          className="modal-text"
+          className="modal-roster"
         >
           Roster
         </p>
@@ -54,7 +56,7 @@ const ModalContent = () => {
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/scores", "_blank")
           }
-          className="modal-text"
+          className="modal-scores"
         >
           Scores
         </p>
@@ -62,7 +64,7 @@ const ModalContent = () => {
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/stats", "_blank")
           }
-          className="modal-text"
+          className="modal-stats"
         >
           Stats
         </p>
