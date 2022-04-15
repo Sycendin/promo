@@ -4,8 +4,6 @@ import "./Modal.css";
 import ModalContent from "./ModalContent/ModalContent";
 import SMSLinks from "../../Footer/SMSLinks/SMSLinks";
 const Modal = ({ open, initialModal }) => {
-  // if (!open) return null;
-
   return ReactDOM.createPortal(
     <Fragment>
       <div

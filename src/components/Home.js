@@ -13,19 +13,19 @@ import Modal from "./Module/Modal/Modal";
 import "./Home.css";
 const Home = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
-  const [height, setHeight] = useState(null);
+  const [divHeight, setDivHeight] = useState(null);
   const [width, setWidth] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [initialModal, setInitialModal] = useState(true);
   const ref = useRef(null);
   const resize = () => {
     setWidth(window.innerWidth);
-    setHeight(ref.current.offsetHeight);
+    setDivHeight(ref.current.offsetHeight);
     setInitialModal(true);
   };
   useEffect(() => {
     setWidth(window.innerWidth);
-    setHeight(ref.current.offsetHeight);
+    setDivHeight(ref.current.offsetHeight);
   }, []);
   return (
     <Fragment>
@@ -44,8 +44,8 @@ const Home = () => {
               zIndex: 1,
             }}
           >
-            {height ? (
-              <BackgroundImage margin={height} resize={resize} />
+            {divHeight ? (
+              <BackgroundImage margin={divHeight} resize={resize} />
             ) : null}
           </div>
         </div>
