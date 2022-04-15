@@ -12,12 +12,13 @@ import ModuleButton from "./Module/ModuleButton/ModuleButton";
 import Modal from "./Module/Modal/Modal";
 import "./Home.css";
 const Home = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-  const [divHeight, setDivHeight] = useState(null);
+  // window.scrollTo({ top: 0, behavior: "smooth" });
+  const [divHeight, setDivHeight] = useState(false);
   const [width, setWidth] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [initialModal, setInitialModal] = useState(true);
   const ref = useRef(null);
+
   const resize = () => {
     setWidth(window.innerWidth);
     setDivHeight(ref.current.offsetHeight);
@@ -25,13 +26,14 @@ const Home = () => {
   };
   useEffect(() => {
     setWidth(window.innerWidth);
-    setDivHeight(ref.current.offsetHeight);
+    setDivHeight(ref.current.clientHeight);
   }, []);
   return (
     <Fragment>
       <div className="home-body" style={{ zIndex: 9, position: "relative" }}>
         <div style={{}} className="wrapper">
           <div ref={ref} style={{ zIndex: 2 }} id="sticky">
+            {/* {console.log(ref.current.clientHeight)} */}
             <BackgroundLogo />
             <BackgroundText />
           </div>
@@ -71,7 +73,9 @@ const Home = () => {
           current={isOpen}
         />
       ) : null}
-      <Modal open={isOpen} initialModal={initialModal}></Modal>
+      {width <= 600 ? (
+        <Modal open={isOpen} initialModal={initialModal}></Modal>
+      ) : null}
     </Fragment>
   );
 };

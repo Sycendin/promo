@@ -3,9 +3,8 @@ import "./Video.css";
 const Video = () => {
   return (
     <Fragment>
-      <div className="video-responsive" style={{}}>
+      <div className="video-responsive">
         <iframe
-          style={{}}
           src={`https://www.youtube.com/embed/2CBzpg32RL8`}
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

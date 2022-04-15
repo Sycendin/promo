@@ -6,7 +6,7 @@ const BackgroundImage = ({ margin, resize }) => {
       resize();
     };
     window.addEventListener("resize", reset);
-    return (_) => {
+    return () => {
       window.removeEventListener("resize", reset);
     };
   });
@@ -29,6 +29,7 @@ const BackgroundImage = ({ margin, resize }) => {
         src={
           "https://cdn.discordapp.com/attachments/958975018816131132/959290872514621450/vlad.webp"
         }
+        onLoad={resize}
       ></img>
     </Fragment>
   );

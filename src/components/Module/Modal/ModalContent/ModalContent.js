@@ -69,6 +69,7 @@ const ModalContent = () => {
           Stats
         </p>
       </div>
+      <br />
     </Fragment>
   );
 };

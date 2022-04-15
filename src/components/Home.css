@@ -6,17 +6,13 @@
   text-shadow: 0 0 10px black, 0 0 10px black, 0 0 10px black, 0 0 10px black; 
 }
 
-
 #sticky {
   width: 70%;
   position: sticky;
   position: -webkit-sticky;
-
   top: 10%;
-
   margin-left: auto;
   margin-right: auto;
-
   color: black
 }
 
@@ -27,9 +23,7 @@
   
 
 }
-.extra{
-  height: 800px;
-}
+
 /* @media (min-height: 768px) {
   #wrapper{
     height: 2000px;
@@ -38,9 +32,3 @@
 
 
 
-iframe{
-  width:70%;
-
-
-
-}

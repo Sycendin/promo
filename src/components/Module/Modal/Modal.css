@@ -27,8 +27,8 @@
   animation: fadeOut ease 0.25s;
 
 }
-.modal_styles_initial {
- position: fixed;
+.modal_style_initial {
+ z-index: 0;
 }
 
 @keyframes fadeInAnimation {
