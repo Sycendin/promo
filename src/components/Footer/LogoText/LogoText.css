@@ -11,3 +11,15 @@
   height: auto;
 }
 
+
+
+@media (max-width: 600px) {
+  .logo-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

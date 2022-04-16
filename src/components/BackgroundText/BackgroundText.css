@@ -18,6 +18,7 @@
 }
 .span-animate {
   opacity: 0;
+  font-size: 5vw;
   animation: spanAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -32,8 +33,14 @@
   }
 }
 
-/* @media (min-height: 768px) {
-  #wrapper{
-    height: 2000px;
+@media (max-width: 600px) {
+  .span-animate{
+    opacity: 0;
+    max-width: 100%;
+    font-size: 6vw;
+    animation: spanAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2000ms;
   }
-} */
+}

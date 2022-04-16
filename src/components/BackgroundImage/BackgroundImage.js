@@ -19,8 +19,6 @@ const BackgroundImage = ({ margin, resize }) => {
         alt={"background"}
         style={{
           position: "relative",
-          maxWidth: "70%",
-          height: "auto",
           marginTop: -(Math.ceil(margin) + 1),
           top: 0,
           borderBottomLeftRadius: 5,

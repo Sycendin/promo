@@ -1,5 +1,8 @@
 .logo-animation{
   opacity: 0;
+  width: 20%;
+  height: auto;
+  margin-right: 60%;
   animation: logoAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -12,5 +15,18 @@
   }
   100% {
       opacity: 1;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .logo-animation{
+    opacity: 0;
+    width: 30%;
+    height: auto;
+    margin-right: 60%;
+    animation: logoAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 }

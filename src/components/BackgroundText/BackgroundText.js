@@ -10,7 +10,6 @@ const BackgroundText = () => {
           display: "flex",
           alignContent: "center",
           flexDirection: "column",
-          fontSize: "5vw",
           fontWeight: "bold",
           color: "rgb(200, 229, 250)",
           marginTop: "25%",
