@@ -9,7 +9,6 @@ const TwitterTimeline = () => {
   } else {
     select = { height: "80vh", width: "35%" };
   }
-  console.log(select);
   return (
     <Fragment>
       <div className="centerContent">

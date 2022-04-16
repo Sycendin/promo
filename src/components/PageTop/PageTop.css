@@ -1,15 +1,16 @@
 .page-top-div{
-position: absolute;
-display: flex;
-flex-direction: column;
-justify-content: center;
-right: 5%;
-width: 10%;
-height: 10%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  right: 5%;
+  width: 10%;
+  height: 10%;
 
 }
 
 .up-logo{
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
@@ -22,10 +23,42 @@ height: 10%;
   font-size: 2vw;
   color:white;
   z-index: 2;
-height: 100%;
-width: 100%; 
+  height: 100%;
+  width: 100%; 
  
 }
 .up-logo:hover{
   cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+  .page-top-div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    right: 5%;
+    width: 10%;
+    height: 10%;
+  }
+
+  .up-logo{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .up-text{
+    position: relative;
+    font-size: 3vw;
+    color:white;
+    z-index: 2;
+    height: 100%;
+    width: 100%; 
+   
+  }
 }
