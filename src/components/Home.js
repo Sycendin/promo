@@ -33,8 +33,7 @@ const Home = () => {
       <div className="home-body" style={{ zIndex: 9, position: "relative" }}>
         <div style={{}} className="wrapper">
           <div ref={ref} style={{ zIndex: 2 }} id="sticky">
-            {/* {console.log(ref.current.clientHeight)} */}
-            <BackgroundLogo />
+            <BackgroundLogo resize={resize} />
             <BackgroundText />
           </div>
           <div className="home-background-image-div">
