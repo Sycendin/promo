@@ -10,7 +10,7 @@ const LogoText = () => {
           height={256}
           alt="bj-logo-with-text"
           src={
-            "https://cdn.discordapp.com/attachments/958975018816131132/960774410145509376/bluejaystext.png"
+            "https://cdn.discordapp.com/attachments/958975018816131132/965463161450950716/bluejaystextsmall.png"
           }
         ></img>
       </div>

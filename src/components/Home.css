@@ -17,18 +17,15 @@
 }
 
 .wrapper {
-  
   margin-left: auto;
   margin-right: auto;
-  
-
 }
 
-/* @media (min-height: 768px) {
-  #wrapper{
-    height: 2000px;
-  }
-} */
-
-
+.home-background-image-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
 

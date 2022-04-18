@@ -37,15 +37,7 @@ const Home = () => {
             <BackgroundLogo />
             <BackgroundText />
           </div>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              position: "relative",
-              zIndex: 1,
-            }}
-          >
+          <div className="home-background-image-div">
             {divHeight ? (
               <BackgroundImage margin={divHeight} resize={resize} />
             ) : null}
