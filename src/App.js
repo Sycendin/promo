@@ -4,6 +4,7 @@ import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./components/NotFound/NotFound";
 import Intro from "./components/Intro/Intro";
+import AppNav from "./components/AppLinks/AppNav/AppNav";
 function App() {
   const [timer, setTimer] = useState(false);
 
@@ -25,6 +26,7 @@ function App() {
               )
             }
           />
+          <Route path="/promo/nav" element={<AppNav />} />
         </Routes>
       </BrowserRouter>
     </div>
