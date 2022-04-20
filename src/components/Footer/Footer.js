@@ -11,7 +11,7 @@ const Footer = () => {
         <Slide direction="up" duration={1000} triggerOnce="true">
           <div className="footer-div" style={{ overflow: "hidden" }}>
             <LogoText />
-            <SMSLinks />
+            <SMSLinks cName={"sms"} />
             <Copyright />
           </div>
         </Slide>

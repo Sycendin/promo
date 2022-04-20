@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import "./SMSLinks.css";
-const SMSLinks = () => {
+const SMSLinks = ({ cName }) => {
   return (
     <Fragment>
-      <div className="sms-div">
+      <div className={`${cName}-div`}>
         <img
-          className="sms-img"
+          className={`${cName}-img`}
           width={256}
           height={256}
           alt="twitter-icon"
@@ -23,7 +23,7 @@ const SMSLinks = () => {
           onClick={() =>
             window.open("https://www.facebook.com/BlueJays/", "_blank")
           }
-          className="sms-img"
+          className={`${cName}-img`}
           width={256}
           height={256}
           alt="fb-icon"
@@ -35,7 +35,7 @@ const SMSLinks = () => {
           onClick={() =>
             window.open("https://www.instagram.com/bluejays/?hl=en", "_blank")
           }
-          className="sms-img"
+          className={`${cName}-img`}
           width={256}
           height={256}
           alt="insta-icon"
