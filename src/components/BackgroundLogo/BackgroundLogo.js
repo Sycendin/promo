@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import "./BackgroundLogo.css";
-const BackgroundLogo = (resize) => {
+const BackgroundLogo = (resize, cName) => {
   return (
     <Fragment>
       {" "}
       <img
-        className="logo-animation"
+        className={cName}
         alt="logo"
         height={440}
         width={480}

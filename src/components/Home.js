@@ -33,7 +33,7 @@ const Home = () => {
       <div className="home-body" style={{ zIndex: 9, position: "relative" }}>
         <div style={{}} className="wrapper">
           <div ref={ref} style={{ zIndex: 2 }} id="sticky">
-            <BackgroundLogo resize={resize} />
+            <BackgroundLogo resize={resize} cName={"logo-animation"} />
             <BackgroundText />
           </div>
           <div className="home-background-image-div">

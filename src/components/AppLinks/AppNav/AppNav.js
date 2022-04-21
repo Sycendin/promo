@@ -1,21 +1,12 @@
 import React, { Fragment } from "react";
 import "./AppNav.css";
 import SMSLinks from "../../Footer/SMSLinks/SMSLinks";
-
+import BackgroundLogo from "../../BackgroundLogo/BackgroundLogo";
 const AppNav = () => {
   return (
     <Fragment>
       <div className="app-nav-div">
-        <img
-          className="app-nav-logo"
-          alt="logo"
-          height={440}
-          width={480}
-          src={
-            "https://cdn.discordapp.com/attachments/958975018816131132/960059023883898920/BlueJaysLogo.webp"
-          }
-        ></img>
-
+        <BackgroundLogo cName={"app-nav-logo"} />
         <span className="app-nav-span">
           <p
             onClick={() =>
