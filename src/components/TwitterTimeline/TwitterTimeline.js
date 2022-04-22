@@ -1,26 +1,29 @@
 import React, { Fragment } from "react";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
-
-const TwitterTimeline = () => {
+import "./TwitterTimeline.css";
+const TwitterTimeline = ({ cOptions }) => {
   const widthCheck = window.innerWidth;
   let select = {};
-  if (widthCheck <= 600) {
-    select = { height: "50vh", width: "70%" };
+  // Check if timeline is from news page otherwise render based on page width
+  if (!cOptions) {
+    if (widthCheck <= 600) {
+      select = { height: "50vh", width: "70%" };
+    } else {
+      select = { height: "80vh", width: "35%" };
+    }
   } else {
-    select = { height: "80vh", width: "35%" };
+    select = cOptions;
   }
   return (
     <Fragment>
-      <div className="centerContent">
-        <div className="selfCenter spaceBetween">
-          <TwitterTimelineEmbed
-            onLoad={function noRefCheck() {}}
-            options={select}
-            sourceType="timeline"
-            theme="dark"
-            userId="41468683"
-          />
-        </div>
+      <div className="timeline-divs">
+        <TwitterTimelineEmbed
+          onLoad={function noRefCheck() {}}
+          options={select}
+          sourceType="timeline"
+          theme="dark"
+          userId="41468683"
+        />
       </div>
     </Fragment>
   );

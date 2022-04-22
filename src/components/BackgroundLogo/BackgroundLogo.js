@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "./BackgroundLogo.css";
-const BackgroundLogo = (resize, cName) => {
+const BackgroundLogo = ({ resize, cName }) => {
   return (
     <Fragment>
       {" "}
@@ -12,7 +12,7 @@ const BackgroundLogo = (resize, cName) => {
         src={
           "https://cdn.discordapp.com/attachments/958975018816131132/960059023883898920/BlueJaysLogo.webp"
         }
-        onLoad={resize}
+        onLoad={() => resize}
       ></img>
     </Fragment>
   );

@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import Home from "./components/Home";
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./components/NotFound/NotFound";
 import Intro from "./components/Intro/Intro";
 import AppNav from "./components/AppLinks/AppNav/AppNav";
+import TwitterTimeline from "./components/TwitterTimeline/TwitterTimeline";
 function App() {
   const [timer, setTimer] = useState(false);
 
@@ -26,7 +27,15 @@ function App() {
               )
             }
           />
-          <Route path="/promo/nav" element={<AppNav />} />
+          <Route
+            path="/promo/news"
+            element={
+              <Fragment>
+                <AppNav />{" "}
+                <TwitterTimeline cOptions={{ height: "100vh", width: "50%" }} />
+              </Fragment>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </div>

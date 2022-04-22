@@ -37,3 +37,12 @@
   margin-right: 10px;
 
 }
+
+.app-nav-text:hover{
+  cursor: pointer;
+  filter: brightness(50%);
+}
+.app-nav-sms-img:hover{
+  cursor: pointer;
+  filter: brightness(50%);
+}
