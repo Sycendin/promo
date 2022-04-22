@@ -16,15 +16,13 @@ const TwitterTimeline = ({ cOptions }) => {
   }
   return (
     <Fragment>
-      <div className="timeline-divs">
-        <TwitterTimelineEmbed
-          onLoad={function noRefCheck() {}}
-          options={select}
-          sourceType="timeline"
-          theme="dark"
-          userId="41468683"
-        />
-      </div>
+      <TwitterTimelineEmbed
+        onLoad={function noRefCheck() {}}
+        options={select}
+        sourceType="timeline"
+        theme="dark"
+        userId="41468683"
+      />
     </Fragment>
   );
 };
