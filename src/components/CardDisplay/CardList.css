@@ -1,5 +1,8 @@
 .cardlist-div{
   display: flex;
   justify-content: center;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-bottom: 20px;
 }
