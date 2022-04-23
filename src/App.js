@@ -6,6 +6,7 @@ import NotFound from "./components/NotFound/NotFound";
 import Intro from "./components/Intro/Intro";
 import AppNav from "./components/AppLinks/AppNav/AppNav";
 import TwitterTimeline from "./components/TwitterTimeline/TwitterTimeline";
+import CardList from "./components/CardDisplay/CardList";
 function App() {
   const [timer, setTimer] = useState(false);
 
@@ -33,6 +34,14 @@ function App() {
               <Fragment>
                 <AppNav />{" "}
                 <TwitterTimeline cOptions={{ height: "100vh", width: "50%" }} />
+              </Fragment>
+            }
+          />
+          <Route
+            path="/promo/roster"
+            element={
+              <Fragment>
+                <AppNav /> <CardList />
               </Fragment>
             }
           />

@@ -5,7 +5,13 @@ const Card = ({ card }) => {
   return (
     <Fragment>
       <div className="card-div">
-        <img src={card.image} height={320} width={213}></img>
+        <img
+          className="card-img"
+          src={card.image}
+          alt={"player face"}
+          height={320}
+          width={213}
+        ></img>
         <p>{card.name}</p>
         <p>{card.position}</p>
       </div>
