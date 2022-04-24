@@ -6,3 +6,9 @@
   width: 70%;
   margin-bottom: 20px;
 }
+
+.cardlist-title{
+  color: white;
+  font-weight: bold;
+  font-size: xx-large;
+}
