@@ -12,8 +12,8 @@ const Card = ({ card }) => {
           height={320}
           width={213}
         ></img>
-        <p>{card.name}</p>
-        <p>{card.position}</p>
+        <p className="card-p">{card.name}</p>
+        <p className="card-p">{card.position}</p>
       </div>
     </Fragment>
   );
