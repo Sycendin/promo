@@ -13,7 +13,11 @@ const Card = ({ card }) => {
           width={213}
         ></img>
         <p className="card-p">{card.name}</p>
-        <p className="card-p">{card.position}</p>
+        <span className="card-position">
+          <p className="card-main-positions">{card.mainPosition}</p>
+          <p className="card-main-positions"> </p>
+          <p className="card-secondary-positions">{card.otherPosition}</p>
+        </span>
       </div>
     </Fragment>
   );
