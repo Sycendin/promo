@@ -9,7 +9,7 @@ const CardList = () => {
       {/* Loop through the 3 data sets */}
       {allData.map((playerType, i) => {
         return (
-          <div>
+          <div className="type-div">
             {/* Return a div that has the title of that data set */}
             <div className="cardlist-title">
               {" "}
