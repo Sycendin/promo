@@ -41,7 +41,15 @@ function App() {
             path="/promo/roster"
             element={
               <Fragment>
-                <AppNav /> <CardList />
+                <AppNav /> <CardList type={"roster"} />
+              </Fragment>
+            }
+          />
+          <Route
+            path="/promo/schedule"
+            element={
+              <Fragment>
+                <AppNav /> <CardList type={"schedule"} />
               </Fragment>
             }
           />

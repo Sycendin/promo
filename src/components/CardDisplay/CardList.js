@@ -2,8 +2,13 @@ import React, { Fragment } from "react";
 import "./CardList.css";
 import { fielders, relievers, starters } from "../../rosterData";
 import Card from "./Card/Card";
-const CardList = () => {
-  const allData = [fielders, relievers, starters];
+const CardList = ({ type }) => {
+  const allData = [];
+  if (type === "roster") {
+    allData = [fielders, relievers, starters];
+  } else if (type === "schedule") {
+    allData = [];
+  }
   return (
     <Fragment>
       {/* Loop through the 3 data sets */}
