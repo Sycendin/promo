@@ -1,4 +1,6 @@
 export const fielders = [
+  { type: "Fielders" },
+
   {
     image:
       "https://cdn.discordapp.com/attachments/958975018816131132/966909873411485736/bo-pic.webp",
@@ -106,6 +108,7 @@ export const fielders = [
 ];
 
 export const starters = [
+  { type: "Starters" },
   {
     image:
       "https://cdn.discordapp.com/attachments/958975018816131132/966909903404949554/berrios-pic.webp",
@@ -144,6 +147,7 @@ export const starters = [
 ];
 
 export const relievers = [
+  { type: "Relievers" },
   {
     image:
       "https://cdn.discordapp.com/attachments/958975018816131132/966909902029226015/romano-pic.webp",

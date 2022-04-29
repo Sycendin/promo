@@ -1,4 +1,5 @@
 export const scheduleData = [
+  { type: "Schedule" },
   {
     image:
       "https://cdn.discordapp.com/attachments/958975018816131132/969095383743619132/march.webp",
