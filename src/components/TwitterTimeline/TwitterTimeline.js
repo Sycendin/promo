@@ -9,7 +9,7 @@ const TwitterTimeline = ({ cOptions }) => {
     if (widthCheck <= 600) {
       select = { height: "50vh", width: "70%" };
     } else {
-      select = { height: "80vh", width: "35%" };
+      select = { height: "80vh", width: "50%" };
     }
   } else {
     select = cOptions;

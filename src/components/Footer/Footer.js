@@ -12,7 +12,7 @@ const Footer = () => {
         <Slide direction="up" duration={1000} triggerOnce="true">
           <div className="footer-div" style={{ overflow: "hidden" }}>
             <LogoText />
-            <SiteLinks cName={"app-nav"} />
+            <SiteLinks cName={"home-nav"} />
             <SMSLinks cName={"sms"} />
             <Copyright />
           </div>

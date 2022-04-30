@@ -1,57 +1,23 @@
 import React, { Fragment } from "react";
+import { Link } from "react-router-dom";
 import "./SiteLinks.css";
 const SiteLinks = ({ cName }) => {
   return (
     <Fragment>
       <span className={cName + "-span"}>
-        <p
-          onClick={() =>
-            window.open("https://www.mlb.com/bluejays/news", "_blank")
-          }
-          className={cName + "-text"}
-        >
-          News
-        </p>
-        <p
-          onClick={() =>
-            window.open("https://www.mlb.com/bluejays/tickets", "_blank")
-          }
-          className={cName + "-text"}
-        >
-          Tickets
-        </p>
-        <p
-          onClick={() =>
-            window.open("https://www.mlb.com/bluejays/schedule", "_blank")
-          }
-          className={cName + "-text"}
-        >
-          Schedule
-        </p>
-        <p
-          onClick={() =>
-            window.open("https://www.mlb.com/bluejays/schedule", "_blank")
-          }
-          className={cName + "-text"}
-        >
-          Roster
-        </p>
-        <p
-          onClick={() =>
-            window.open("https://www.mlb.com/bluejays/scores", "_blank")
-          }
-          className={cName + "-text"}
-        >
-          Scores
-        </p>
-        <p
-          onClick={() =>
-            window.open("https://www.mlb.com/bluejays/stats", "_blank")
-          }
-          className={cName + "-text"}
-        >
-          Stats
-        </p>
+        <Link to={"/promo/"} style={{ textDecoration: "none" }}>
+          {" "}
+          <p className={cName + "-text"}>Home</p>
+        </Link>
+        <Link to={"/promo/news"} style={{ textDecoration: "none" }}>
+          <p className={cName + "-text"}>News</p>
+        </Link>
+        <Link to={"/promo/schedule"} style={{ textDecoration: "none" }}>
+          <p className={cName + "-text"}>Schedule</p>
+        </Link>
+        <Link to={"/promo/roster"} style={{ textDecoration: "none" }}>
+          <p className={cName + "-text"}>Roster</p>
+        </Link>
       </span>
     </Fragment>
   );

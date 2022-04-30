@@ -1,5 +1,5 @@
 export const scheduleData = [
-  { type: "Schedule" },
+  { type: "2022 Blue Jays Schedule" },
   {
     image:
       "https://cdn.discordapp.com/attachments/958975018816131132/969095383743619132/march.webp",

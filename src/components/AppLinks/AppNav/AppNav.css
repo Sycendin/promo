@@ -16,11 +16,12 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-size: 1vw;
+
 }
 .app-nav-text{
-  margin-right: 10px;
+  margin-right: 20px;
+  color: white;
+  font-size: 2vw;
 }
 
 .app-nav-sms-div{
