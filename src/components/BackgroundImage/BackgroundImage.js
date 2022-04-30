@@ -2,12 +2,9 @@ import React, { Fragment, useEffect } from "react";
 import "./BackgroundImage.css";
 const BackgroundImage = ({ margin, resize }) => {
   useEffect(() => {
-    const reset = () => {
-      resize();
-    };
-    window.addEventListener("resize", reset);
+    window.addEventListener("resize", resize);
     return () => {
-      window.removeEventListener("resize", reset);
+      window.removeEventListener("resize", resize);
     };
   });
   return (

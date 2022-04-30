@@ -13,7 +13,7 @@ import Modal from "./Module/Modal/Modal";
 import "./Home.css";
 const Home = () => {
   // window.scrollTo({ top: 0, behavior: "smooth" });
-  const [divHeight, setDivHeight] = useState(false);
+  const [divHeight, setDivHeight] = useState(0);
   const [width, setWidth] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
   const [initialModal, setInitialModal] = useState(true);
@@ -37,7 +37,7 @@ const Home = () => {
             <BackgroundText />
           </div>
           <div className="home-background-image-div">
-            {divHeight ? (
+            {divHeight !== 0 ? (
               <BackgroundImage margin={divHeight} resize={resize} />
             ) : null}
           </div>
