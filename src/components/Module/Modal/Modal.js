@@ -17,7 +17,7 @@ const Modal = ({ open, initialModal }) => {
       >
         {open ? <ModalContent /> : null}
 
-        {open ? <SMSLinks /> : null}
+        {open ? <SMSLinks cName={"sms"} /> : null}
       </div>
     </Fragment>,
     document.getElementById("portal")

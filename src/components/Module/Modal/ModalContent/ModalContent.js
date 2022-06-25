@@ -21,7 +21,7 @@ const ModalContent = () => {
       </div>
       <div className="modal-div">
         <p
-          className="modal-news"
+          className="modal-news modal-text"
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/news", "_blank")
           }
@@ -32,7 +32,7 @@ const ModalContent = () => {
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/tickets", "_blank")
           }
-          className="modal-tickets"
+          className="modal-tickets modal-text"
         >
           Tickets
         </p>
@@ -40,7 +40,7 @@ const ModalContent = () => {
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/schedule", "_blank")
           }
-          className="modal-schedule"
+          className="modal-schedule modal-text"
         >
           Schedule
         </p>
@@ -48,7 +48,7 @@ const ModalContent = () => {
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/schedule", "_blank")
           }
-          className="modal-roster"
+          className="modal-roster modal-text"
         >
           Roster
         </p>
@@ -56,7 +56,7 @@ const ModalContent = () => {
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/scores", "_blank")
           }
-          className="modal-scores"
+          className="modal-scores modal-text"
         >
           Scores
         </p>
@@ -64,7 +64,7 @@ const ModalContent = () => {
           onClick={() =>
             window.open("https://www.mlb.com/bluejays/stats", "_blank")
           }
-          className="modal-stats"
+          className="modal-stats modal-text"
         >
           Stats
         </p>
